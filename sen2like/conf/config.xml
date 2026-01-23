@@ -16,7 +16,7 @@
         <doPackagerL2F>True</doPackagerL2F>
     </Processing>
     <Directories>
-        <archive_dir>/data/HLS</archive_dir>
+        <archive_dir>E:/2026_Sen2Like/data/HLS_outputs</archive_dir>
         <cams_dir>/data/CAMS/monthly</cams_dir>
         <cams_daily_dir>/data/CAMS/daily</cams_daily_dir>
         <cams_hourly_dir>/data/CAMS/hourly</cams_hourly_dir>
@@ -27,7 +27,7 @@
         <coverage>0.5</coverage>
         <cloud_cover>11</cloud_cover>
         <!-- Local -->
-        <base_url>/data/PRODUCTS</base_url>
+        <base_url>E:/2026_Sen2Like/data</base_url>
         <url_parameters_pattern_Sentinel2>{base_url}/{mission}/{tile}</url_parameters_pattern_Sentinel2>
         <url_parameters_pattern_Landsat8>{base_url}/{mission}/{path}/{row}</url_parameters_pattern_Landsat8>
         <url_parameters_pattern_Landsat9>{base_url}/{mission}/{path}/{row}</url_parameters_pattern_Landsat9>
@@ -74,7 +74,7 @@
         <force_geometric_correction>True</force_geometric_correction>
     </Geometry>
     <Atmcor>
-        <use_sen2cor>True</use_sen2cor>
+        <use_sen2cor>False</use_sen2cor>
         <sen2cor_path>../sen2cor/process.py</sen2cor_path>
     </Atmcor>
     <Nbar>
