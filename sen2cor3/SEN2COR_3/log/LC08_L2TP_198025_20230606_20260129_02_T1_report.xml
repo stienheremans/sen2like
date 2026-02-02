@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sen2Cor_Level-2A_Report_File>
+<check>
+<inspection execution="2026-01-29T19:34:19.816" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Sen2Cor. Version: 03.03.01, created: 2025.04.10, supporting Level-1TP Collection_1-2 Landsat_8-9 started ...</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:20.773" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A processing for Landsat, elapsed time[s]: 1.082, total: 0:00:01.082282</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:20.776" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 0.55 : L2A processing for Landsat, elapsed time[s]: 1.082, total: 0:00:01.082282</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:20.778" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: process_landsat: start of pre processing, elapsed time[s]: 0.005, total: 0:00:01.087192</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:20.779" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 0.55 : process_landsat: start of pre processing, elapsed time[s]: 0.005, total: 0:00:01.087192</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:20.782" level="INFO" process="2508" module="L2A_Process_Landsat" function="preprocess" line="69"/>
+<message contentType="Text">pre-processing with resolution 30 m</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:21.298" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_Tables: CAMS daily ncfile (gtco3): NOT FOUND, elapsed time[s]: 0.520, total: 0:00:01.606856</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:21.299" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 0.82 : L2A_Tables: CAMS daily ncfile (gtco3): NOT FOUND, elapsed time[s]: 0.520, total: 0:00:01.606856</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:21.302" level="WARNING" process="2508" module="L2A_BandIO_Landsat" function="import_aux_band_list" line="252"/>
+<message contentType="Text">no ozone values found in input data, default (331) will be used</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:21.302" level="INFO" process="2508" module="L2A_Config_Landsat" function="setOzoneContentFromMetadata" line="2163"/>
+<message contentType="Text">ozone mean value is: 331</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:21.303" level="INFO" process="2508" module="L2A_Config_Landsat" function="createAtmDataFilename" line="2103"/>
+<message contentType="Text">Ozone_Content is set to h with 0.000000 least difference to input value</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:21.303" level="INFO" process="2508" module="L2A_Config_Landsat" function="createAtmDataFilename" line="2107"/>
+<message contentType="Text">generated file name for look up tables is: h99000_wv20_rura.atm</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:21.303" level="INFO" process="2508" module="L2A_Config_Landsat" function="createAtmDataFilename" line="2112"/>
+<message contentType="Text">look up table for LANDSAT_8 found and used</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:21.303" level="INFO" process="2508" module="L2A_AuxImport_Landsat" function="gdalDEM_aws" line="2049"/>
+<message contentType="Text">Start DEM alignment for tile</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:21.303" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_DEM: reading list, elapsed time[s]: 0.005, total: 0:00:01.611995</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:21.304" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 0.82 : L2A_DEM: reading list, elapsed time[s]: 0.005, total: 0:00:01.611995</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:21.363" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_DEM: list read, elapsed time[s]: 0.059, total: 0:00:01.670724</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:21.363" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 0.85 : L2A_DEM: list read, elapsed time[s]: 0.059, total: 0:00:01.670724</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:21.368" level="INFO" process="2508" module="L2A_AuxImport_Landsat" function="gdalDEM_aws" line="2128"/>
+<message contentType="Text">Dem exists: Copernicus_DSM_COG_30_N50_00_E004_00_DEM.tif</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:21.370" level="INFO" process="2508" module="L2A_AuxImport_Landsat" function="gdalDEM_aws" line="2128"/>
+<message contentType="Text">Dem exists: Copernicus_DSM_COG_30_N51_00_E004_00_DEM.tif</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:21.372" level="INFO" process="2508" module="L2A_AuxImport_Landsat" function="gdalDEM_aws" line="2128"/>
+<message contentType="Text">Dem exists: Copernicus_DSM_COG_30_N50_00_E005_00_DEM.tif</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:21.373" level="INFO" process="2508" module="L2A_AuxImport_Landsat" function="gdalDEM_aws" line="2128"/>
+<message contentType="Text">Dem exists: Copernicus_DSM_COG_30_N51_00_E005_00_DEM.tif</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:21.375" level="INFO" process="2508" module="L2A_AuxImport_Landsat" function="gdalDEM_aws" line="2128"/>
+<message contentType="Text">Dem exists: Copernicus_DSM_COG_30_N50_00_E006_00_DEM.tif</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:21.378" level="INFO" process="2508" module="L2A_AuxImport_Landsat" function="gdalDEM_aws" line="2128"/>
+<message contentType="Text">Dem exists: Copernicus_DSM_COG_30_N51_00_E006_00_DEM.tif</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:26.742" level="INFO" process="2508" module="L2A_AuxImport_Landsat" function="gdalDEM_aws" line="2264"/>
+<message contentType="Text">DEM received and prepared</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:26.802" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_BAND_IO: band DIGITAL_ELEVATION_MAP imported, elapsed time[s]: 5.441, total: 0:00:07.111319</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:26.803" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 3.61 : L2A_BAND_IO: band DIGITAL_ELEVATION_MAP imported, elapsed time[s]: 5.441, total: 0:00:07.111319</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:27.422" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_BAND_IO: band SHADOW_MAP imported, elapsed time[s]: 0.620, total: 0:00:07.731048</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:27.422" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 3.93 : L2A_BAND_IO: band SHADOW_MAP imported, elapsed time[s]: 0.620, total: 0:00:07.731048</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:28.847" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_BAND_IO: band SLOPE imported, elapsed time[s]: 1.425, total: 0:00:09.156062</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:28.848" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 4.65 : L2A_BAND_IO: band SLOPE imported, elapsed time[s]: 1.425, total: 0:00:09.156062</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.076" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_BAND_IO: band ASPECT imported, elapsed time[s]: 1.229, total: 0:00:10.385167</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.077" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 5.27 : L2A_BAND_IO: band ASPECT imported, elapsed time[s]: 1.229, total: 0:00:10.385167</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.079" level="WARNING" process="2508" module="L2A_AuxImport_Landsat" function="gdalCCI_wb" line="585"/>
+<message contentType="Text">ESA CCI Water Bodies map not present, water detection will be performed without a priori information</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.080" level="WARNING" process="2508" module="L2A_AuxImport_Landsat" function="gdalCCI_lccs" line="675"/>
+<message contentType="Text">ESA CCI Land Cover map not present, cloud detection over urban areas will be performed without a priori information</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.081" level="WARNING" process="2508" module="L2A_AuxImport_Landsat" function="gdalCCI_snowc" line="791"/>
+<message contentType="Text">ESA CCI Snow Condition map not present, no snow map post-processing will be done</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.082" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_Tables: CAMS daily ncfile (aod550): NOT FOUND, elapsed time[s]: 0.006, total: 0:00:10.390800</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.082" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 5.28 : L2A_Tables: CAMS daily ncfile (aod550): NOT FOUND, elapsed time[s]: 0.006, total: 0:00:10.390800</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.083" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_Tables: [WARNING] Geopotential file not found. Try to use a fallback., elapsed time[s]: 0.001, total: 0:00:10.391826</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.083" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 5.28 : L2A_Tables: [WARNING] Geopotential file not found. Try to use a fallback., elapsed time[s]: 0.001, total: 0:00:10.391826</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.085" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_Tables: CAMS monthly ncfile: NOT FOUND, elapsed time[s]: 0.002, total: 0:00:10.394085</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.085" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 5.28 : L2A_Tables: CAMS monthly ncfile: NOT FOUND, elapsed time[s]: 0.002, total: 0:00:10.394085</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.086" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_Tables: [WARNING] Geopotential file not found. Try to use a fallback., elapsed time[s]: 0.001, total: 0:00:10.395557</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.087" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 5.28 : L2A_Tables: [WARNING] Geopotential file not found. Try to use a fallback., elapsed time[s]: 0.001, total: 0:00:10.395557</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.089" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_Tables: CAMS ncfile: NOT FOUND., elapsed time[s]: 0.003, total: 0:00:10.398560</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.089" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 5.28 : L2A_Tables: CAMS ncfile: NOT FOUND., elapsed time[s]: 0.003, total: 0:00:10.398560</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.091" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: aux_import: continue without CAMS ECMWF aerosol forecast information, elapsed time[s]: 0.002, total: 0:00:10.400563</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.091" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 5.28 : aux_import: continue without CAMS ECMWF aerosol forecast information, elapsed time[s]: 0.002, total: 0:00:10.400563</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.572" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_Tables: CAMS daily ncfile (tcwv): NOT FOUND, elapsed time[s]: 0.481, total: 0:00:10.881249</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.573" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 5.53 : L2A_Tables: CAMS daily ncfile (tcwv): NOT FOUND, elapsed time[s]: 0.481, total: 0:00:10.881249</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.578" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_Tables: CAMS monthly ncfile: NOT FOUND, elapsed time[s]: 0.006, total: 0:00:10.887255</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.579" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 5.53 : L2A_Tables: CAMS monthly ncfile: NOT FOUND, elapsed time[s]: 0.006, total: 0:00:10.887255</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.660" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_BAND_IO: band WATER_VAPOUR imported, elapsed time[s]: 0.082, total: 0:00:10.969562</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:30.660" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 5.57 : L2A_BAND_IO: band WATER_VAPOUR imported, elapsed time[s]: 0.082, total: 0:00:10.969562</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:31.285" level="INFO" process="2508" module="L2A_Process_Landsat" function="process" line="98"/>
+<message contentType="Text">processing Scene Classification for Landsat</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:31.285" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: Pre process   , elapsed time[s]: 0.625, total: 0:00:11.594539</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:31.285" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 5.89 : Pre process   , elapsed time[s]: 0.625, total: 0:00:11.594539</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:31.288" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: Scene Classification Classic   , elapsed time[s]: 0.003, total: 0:00:11.597637</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:31.289" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 5.89 : Scene Classification Classic   , elapsed time[s]: 0.003, total: 0:00:11.597637</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:34.143" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_SC init   , elapsed time[s]: 2.855, total: 0:00:14.452497</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:34.144" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 7.34 : L2A_SC init   , elapsed time[s]: 2.855, total: 0:00:14.452497</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:34.727" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_CSND_1_1  , elapsed time[s]: 0.583, total: 0:00:15.035398</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:34.727" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 7.63 : L2A_CSND_1_1  , elapsed time[s]: 0.583, total: 0:00:15.035398</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:35.477" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_CSND_1_2  , elapsed time[s]: 0.751, total: 0:00:15.786611</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:35.478" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 8.02 : L2A_CSND_1_2  , elapsed time[s]: 0.751, total: 0:00:15.786611</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:36.409" level="INFO" process="2508" module="L2A_SceneClass" function="process" line="1228"/>
+<message contentType="Text">Snow probability from climatology, detection will be performed</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:36.409" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_CSND_2_0  , elapsed time[s]: 0.931, total: 0:00:16.717961</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:36.409" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 8.49 : L2A_CSND_2_0  , elapsed time[s]: 0.931, total: 0:00:16.717961</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:36.953" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_CSND_2_1  , elapsed time[s]: 0.543, total: 0:00:17.260700</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:36.953" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 8.76 : L2A_CSND_2_1  , elapsed time[s]: 0.543, total: 0:00:17.260700</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:37.306" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_CSND_2_1_2, elapsed time[s]: 0.354, total: 0:00:17.614684</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:37.306" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 8.94 : L2A_CSND_2_1_2, elapsed time[s]: 0.354, total: 0:00:17.614684</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:37.583" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_CSND_2_2  , elapsed time[s]: 0.278, total: 0:00:17.892415</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:37.584" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 9.09 : L2A_CSND_2_2  , elapsed time[s]: 0.278, total: 0:00:17.892415</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:37.847" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_CSND_2_3  , elapsed time[s]: 0.263, total: 0:00:18.155879</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:37.847" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 9.22 : L2A_CSND_2_3  , elapsed time[s]: 0.263, total: 0:00:18.155879</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:38.287" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_CSND_2_4  , elapsed time[s]: 0.441, total: 0:00:18.596575</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:38.288" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 9.44 : L2A_CSND_2_4  , elapsed time[s]: 0.441, total: 0:00:18.596575</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:38.848" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_CSND_2_5  , elapsed time[s]: 0.560, total: 0:00:19.157054</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:38.857" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 9.73 : L2A_CSND_2_5  , elapsed time[s]: 0.560, total: 0:00:19.157054</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:38.860" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_SnowPostProcessingCCI  , elapsed time[s]: 0.012, total: 0:00:19.169057</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:38.860" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 9.73 : L2A_SnowPostProcessingCCI  , elapsed time[s]: 0.012, total: 0:00:19.169057</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:39.691" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_CSND_3    , elapsed time[s]: 0.831, total: 0:00:20.000182</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:39.692" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 10.16 : L2A_CSND_3    , elapsed time[s]: 0.831, total: 0:00:20.000182</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:40.482" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_CSND_5_1  , elapsed time[s]: 0.791, total: 0:00:20.791326</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:40.482" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 10.56 : L2A_CSND_5_1  , elapsed time[s]: 0.791, total: 0:00:20.791326</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:41.624" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_CSND_5_2  , elapsed time[s]: 1.142, total: 0:00:21.932898</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:41.625" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 11.14 : L2A_CSND_5_2  , elapsed time[s]: 1.142, total: 0:00:21.932898</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:42.503" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_CSND_6    , elapsed time[s]: 0.879, total: 0:00:22.811771</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:42.504" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 11.58 : L2A_CSND_6    , elapsed time[s]: 0.879, total: 0:00:22.811771</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:43.041" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_CSND_6_2  , elapsed time[s]: 0.538, total: 0:00:23.349398</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:43.041" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 11.86 : L2A_CSND_6_2  , elapsed time[s]: 0.538, total: 0:00:23.349398</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:43.567" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_CSND_7    , elapsed time[s]: 0.527, total: 0:00:23.876069</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:43.570" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 12.12 : L2A_CSND_7    , elapsed time[s]: 0.527, total: 0:00:23.876069</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:52.896" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_SHD       , elapsed time[s]: 9.329, total: 0:00:33.205194</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:52.897" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 16.86 : L2A_SHD       , elapsed time[s]: 9.329, total: 0:00:33.205194</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:53.550" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: DV recovery   , elapsed time[s]: 0.654, total: 0:00:33.858830</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:53.550" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 17.19 : DV recovery   , elapsed time[s]: 0.654, total: 0:00:33.858830</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:54.169" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: WP recovery   , elapsed time[s]: 0.619, total: 0:00:34.477741</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:54.169" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 17.51 : WP recovery   , elapsed time[s]: 0.619, total: 0:00:34.477741</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:54.174" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: WP recovery with CCI Water Bodies at 150m  , elapsed time[s]: 0.005, total: 0:00:34.482789</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:54.174" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 17.51 : WP recovery with CCI Water Bodies at 150m  , elapsed time[s]: 0.005, total: 0:00:34.482789</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:54.240" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: Water Pixels cleaning with DEM, elapsed time[s]: 0.066, total: 0:00:34.549273</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:54.241" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 17.54 : Water Pixels cleaning with DEM, elapsed time[s]: 0.066, total: 0:00:34.549273</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:54.330" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: Cloud Shadow Pixels cleaning with DEM, elapsed time[s]: 0.090, total: 0:00:34.639441</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:54.330" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 17.59 : Cloud Shadow Pixels cleaning with DEM, elapsed time[s]: 0.090, total: 0:00:34.639441</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:54.333" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: Topographic shadows classification over snow in mountainous area with DEM, elapsed time[s]: 0.002, total: 0:00:34.641803</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:54.333" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 17.59 : Topographic shadows classification over snow in mountainous area with DEM, elapsed time[s]: 0.002, total: 0:00:34.641803</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:54.946" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: Snow recovery , elapsed time[s]: 0.612, total: 0:00:35.254053</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:54.946" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 17.90 : Snow recovery , elapsed time[s]: 0.612, total: 0:00:35.254053</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:55.273" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: Soil recovery , elapsed time[s]: 0.328, total: 0:00:35.582385</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:55.274" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 18.07 : Soil recovery , elapsed time[s]: 0.328, total: 0:00:35.582385</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:55.303" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: Land recovery with B10, B09 and B8A , elapsed time[s]: 0.030, total: 0:00:35.612607</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:55.304" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 18.08 : Land recovery with B10, B09 and B8A , elapsed time[s]: 0.030, total: 0:00:35.612607</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:55.306" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: Cirrus recovery with B10 , elapsed time[s]: 0.003, total: 0:00:35.615617</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:55.306" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 18.08 : Cirrus recovery with B10 , elapsed time[s]: 0.003, total: 0:00:35.615617</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:55.309" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: Urban and Bare pixel recovery with CCI Land Cover Map at 300 m , elapsed time[s]: 0.002, total: 0:00:35.617854</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:55.309" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 18.09 : Urban and Bare pixel recovery with CCI Land Cover Map at 300 m , elapsed time[s]: 0.002, total: 0:00:35.617854</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:55.315" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: Post process  , elapsed time[s]: 0.006, total: 0:00:35.623854</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:55.315" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 18.09 : Post process  , elapsed time[s]: 0.006, total: 0:00:35.623854</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:55.377" level="INFO" process="2508" module="L2A_SceneClass" function="postprocess" line="358"/>
+<message contentType="Text">Storing final Classification Mask</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:55.380" level="INFO" process="2508" module="L2A_SceneClass" function="postprocess" line="360"/>
+<message contentType="Text">Storing final Snow Confidence Mask</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:55.449" level="INFO" process="2508" module="L2A_SceneClass" function="postprocess" line="362"/>
+<message contentType="Text">Storing final Cloud Confidence Mask</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:55.517" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: Post process  , elapsed time[s]: 0.203, total: 0:00:35.826362</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:55.517" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 18.19 : Post process  , elapsed time[s]: 0.203, total: 0:00:35.826362</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:55.520" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: processing Atmospheric Correction for Landsat, elapsed time[s]: 0.003, total: 0:00:35.829363</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:55.520" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 18.19 : processing Atmospheric Correction for Landsat, elapsed time[s]: 0.003, total: 0:00:35.829363</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:34:55.522" level="INFO" process="2508" module="L2A_AtmCorr" function="checkConfiguration" line="1119"/>
+<message contentType="Text">checking configuration</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:00.494" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_AtmCorr: end of calculation terrain maps, elapsed time[s]: 4.974, total: 0:00:40.803542</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:00.497" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 20.72 : L2A_AtmCorr: end of calculation terrain maps, elapsed time[s]: 4.974, total: 0:00:40.803542</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:00.502" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_AtmCorr: start of AOT retrieval at 550nm, elapsed time[s]: 0.008, total: 0:00:40.811277</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:00.502" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 20.72 : L2A_AtmCorr: start of AOT retrieval at 550nm, elapsed time[s]: 0.008, total: 0:00:40.811277</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:02.921" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_AtmCorr: end of internal classification, elapsed time[s]: 2.419, total: 0:00:43.229862</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:02.923" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 21.95 : L2A_AtmCorr: end of internal classification, elapsed time[s]: 2.419, total: 0:00:43.229862</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:03.258" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_AtmCorr: end of interpolation LUTs, elapsed time[s]: 0.337, total: 0:00:43.566930</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:03.258" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 22.12 : L2A_AtmCorr: end of interpolation LUTs, elapsed time[s]: 0.337, total: 0:00:43.566930</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:08.092" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_AtmCorr: end retrieving reference pixels for dark areas, elapsed time[s]: 4.834, total: 0:00:48.400773</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:08.093" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 24.58 : L2A_AtmCorr: end retrieving reference pixels for dark areas, elapsed time[s]: 4.834, total: 0:00:48.400773</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:19.160" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_AtmCorr: end of check for negative reflectance pixels, elapsed time[s]: 11.068, total: 0:00:59.468282</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:19.160" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 30.20 : L2A_AtmCorr: end of check for negative reflectance pixels, elapsed time[s]: 11.068, total: 0:00:59.468282</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:21.338" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_AtmCorr: the rescaling of path radiance in blue band has been disabled by configuration, elapsed time[s]: 2.179, total: 0:01:01.647092</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:21.339" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 31.30 : L2A_AtmCorr: the rescaling of path radiance in blue band has been disabled by configuration, elapsed time[s]: 2.179, total: 0:01:01.647092</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:28.981" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_AtmCorr: end of visibility index calculation, elapsed time[s]: 7.642, total: 0:01:09.289145</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:28.983" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 35.18 : L2A_AtmCorr: end of visibility index calculation, elapsed time[s]: 7.642, total: 0:01:09.289145</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:28.987" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_AtmCorr: end of AOT retrieval at 550nm, elapsed time[s]: 0.007, total: 0:01:09.296144</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:28.988" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 35.19 : L2A_AtmCorr: end of AOT retrieval at 550nm, elapsed time[s]: 0.007, total: 0:01:09.296144</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:28.991" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_AtmCorr: start of water vapour retrieval, elapsed time[s]: 0.004, total: 0:01:09.300167</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:28.991" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 35.19 : L2A_AtmCorr: start of water vapour retrieval, elapsed time[s]: 0.004, total: 0:01:09.300167</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:28.995" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_AtmCorr: preparation of surface reflectance retrieval, elapsed time[s]: 0.004, total: 0:01:09.304161</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:28.996" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 35.19 : L2A_AtmCorr: preparation of surface reflectance retrieval, elapsed time[s]: 0.004, total: 0:01:09.304161</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:29.000" level="INFO" process="2508" module="L2A_AtmCorr" function="apda1_lut_constvis_a3" line="7369"/>
+<message contentType="Text">generating grid for altitude with aerosol file name: h99000_wv04_rura.atm</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:29.168" level="INFO" process="2508" module="L2A_AtmCorr" function="apda1_lut_constvis_a3" line="7369"/>
+<message contentType="Text">generating grid for altitude with aerosol file name: h99000_wv10_rura.atm</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:29.229" level="INFO" process="2508" module="L2A_AtmCorr" function="apda1_lut_constvis_a3" line="7369"/>
+<message contentType="Text">generating grid for altitude with aerosol file name: h99000_wv20_rura.atm</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:29.271" level="INFO" process="2508" module="L2A_AtmCorr" function="apda1_lut_constvis_a3" line="7369"/>
+<message contentType="Text">generating grid for altitude with aerosol file name: h99000_wv29_rura.atm</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:29.350" level="INFO" process="2508" module="L2A_AtmCorr" function="apda1_lut_constvis_a3" line="7369"/>
+<message contentType="Text">generating grid for altitude with aerosol file name: h99000_wv40_rura.atm</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:29.452" level="INFO" process="2508" module="L2A_AtmCorr" function="apda1_lut_constvis_a3" line="7369"/>
+<message contentType="Text">generating grid for altitude with aerosol file name: h99000_wv50_rura.atm</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:31.882" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_AtmCorr: end of surface reflectance retrieval preparation, elapsed time[s]: 2.887, total: 0:01:12.191525</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:31.884" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 36.66 : L2A_AtmCorr: end of surface reflectance retrieval preparation, elapsed time[s]: 2.887, total: 0:01:12.191525</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:31.888" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_AtmCorr: start of surface reflectance retrieval, elapsed time[s]: 0.005, total: 0:01:12.196839</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:35:31.889" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 36.66 : L2A_AtmCorr: start of surface reflectance retrieval, elapsed time[s]: 0.005, total: 0:01:12.196839</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:36:08.812" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_AtmCorr: end of surface reflectance retrieval, elapsed time[s]: 36.925, total: 0:01:49.121418</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:36:08.812" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 55.41 : L2A_AtmCorr: end of surface reflectance retrieval, elapsed time[s]: 36.925, total: 0:01:49.121418</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:36:09.148" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_AtmCorr: start of rho retrieval step 2, elapsed time[s]: 0.336, total: 0:01:49.457184</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:36:09.149" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 55.58 : L2A_AtmCorr: start of rho retrieval step 2, elapsed time[s]: 0.336, total: 0:01:49.457184</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:36:09.218" level="INFO" process="2508" module="L2A_AtmCorr" function="rho_retrieval_step2" line="6494"/>
+<message contentType="Text">surface reflectance retrieval, step 2 (terrain, adjacency effect)</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:36:47.334" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: L2A_AtmCorr: end of rho retrieval step 2, elapsed time[s]: 38.186, total: 0:02:27.642990</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:36:47.335" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 74.97 : L2A_AtmCorr: end of rho retrieval step 2, elapsed time[s]: 38.186, total: 0:02:27.642990</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:36:47.670" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: start of post processing, elapsed time[s]: 0.336, total: 0:02:27.978836</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:36:47.671" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 75.14 : start of post processing, elapsed time[s]: 0.336, total: 0:02:27.978836</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:36:51.183" level="INFO" process="2508" module="L2A_BandIO_Landsat" function="export_bands" line="661"/>
+<message contentType="Text">exporting band COASTAL_AEROSOL</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:36:51.183" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: exporting band COASTAL_AEROSOL, elapsed time[s]: 3.514, total: 0:02:31.492661</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:36:51.185" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 76.92 : exporting band COASTAL_AEROSOL, elapsed time[s]: 3.514, total: 0:02:31.492661</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:36:54.163" level="INFO" process="2508" module="L2A_BandIO_Landsat" function="export_bands" line="661"/>
+<message contentType="Text">exporting band BLUE</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:36:54.164" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: exporting band BLUE, elapsed time[s]: 2.980, total: 0:02:34.472962</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:36:54.164" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 78.44 : exporting band BLUE, elapsed time[s]: 2.980, total: 0:02:34.472962</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:36:56.979" level="INFO" process="2508" module="L2A_BandIO_Landsat" function="export_bands" line="661"/>
+<message contentType="Text">exporting band GREEN</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:36:56.979" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: exporting band GREEN, elapsed time[s]: 2.815, total: 0:02:37.288303</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:36:56.980" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 79.87 : exporting band GREEN, elapsed time[s]: 2.815, total: 0:02:37.288303</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:36:59.516" level="INFO" process="2508" module="L2A_BandIO_Landsat" function="export_bands" line="661"/>
+<message contentType="Text">exporting band RED</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:36:59.516" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: exporting band RED, elapsed time[s]: 2.537, total: 0:02:39.824942</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:36:59.517" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 81.15 : exporting band RED, elapsed time[s]: 2.537, total: 0:02:39.824942</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:02.041" level="INFO" process="2508" module="L2A_BandIO_Landsat" function="export_bands" line="661"/>
+<message contentType="Text">exporting band NEAR_INFRARED</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:02.042" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: exporting band NEAR_INFRARED, elapsed time[s]: 2.526, total: 0:02:42.350895</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:02.043" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 82.44 : exporting band NEAR_INFRARED, elapsed time[s]: 2.526, total: 0:02:42.350895</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:04.762" level="INFO" process="2508" module="L2A_BandIO_Landsat" function="export_bands" line="661"/>
+<message contentType="Text">exporting band SHORT_WAVE_INFRARED_1</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:04.762" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: exporting band SHORT_WAVE_INFRARED_1, elapsed time[s]: 2.720, total: 0:02:45.070887</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:04.762" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 83.82 : exporting band SHORT_WAVE_INFRARED_1, elapsed time[s]: 2.720, total: 0:02:45.070887</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:07.290" level="INFO" process="2508" module="L2A_BandIO_Landsat" function="export_bands" line="661"/>
+<message contentType="Text">exporting band SHORT_WAVE_INFRARED_2</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:07.290" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: exporting band SHORT_WAVE_INFRARED_2, elapsed time[s]: 2.528, total: 0:02:47.598975</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:07.291" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 85.10 : exporting band SHORT_WAVE_INFRARED_2, elapsed time[s]: 2.528, total: 0:02:47.598975</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:07.890" level="INFO" process="2508" module="L2A_BandIO_Landsat" function="export_bands" line="674"/>
+<message contentType="Text">exporting band SCENE_CLASSIFICATION</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:07.890" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: exporting band SCENE_CLASSIFICATION, elapsed time[s]: 0.600, total: 0:02:48.199280</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:07.891" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 85.41 : exporting band SCENE_CLASSIFICATION, elapsed time[s]: 0.600, total: 0:02:48.199280</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:08.610" level="INFO" process="2508" module="L2A_BandIO_Landsat" function="export_bands" line="674"/>
+<message contentType="Text">exporting band SNOW_MAP</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:08.610" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: exporting band SNOW_MAP, elapsed time[s]: 0.720, total: 0:02:48.918817</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:08.611" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 85.77 : exporting band SNOW_MAP, elapsed time[s]: 0.720, total: 0:02:48.918817</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:09.107" level="INFO" process="2508" module="L2A_BandIO_Landsat" function="export_bands" line="674"/>
+<message contentType="Text">exporting band CLOUD_MAP</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:09.107" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: exporting band CLOUD_MAP, elapsed time[s]: 0.497, total: 0:02:49.415845</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:09.108" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 86.02 : exporting band CLOUD_MAP, elapsed time[s]: 0.497, total: 0:02:49.415845</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:09.993" level="INFO" process="2508" module="L2A_BandIO_Landsat" function="export_bands" line="684"/>
+<message contentType="Text">exporting band AEROSOL_OPTICAL_THICKNESS</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:09.993" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: exporting band AEROSOL_OPTICAL_THICKNESS, elapsed time[s]: 0.886, total: 0:02:50.301874</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:09.994" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 86.47 : exporting band AEROSOL_OPTICAL_THICKNESS, elapsed time[s]: 0.886, total: 0:02:50.301874</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:10.879" level="INFO" process="2508" module="L2A_BandIO_Landsat" function="export_bands" line="684"/>
+<message contentType="Text">exporting band WATER_VAPOUR</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:10.879" level="INFO" process="2508" module="L2A_Config_Landsat" function="timestamp" line="1461"/>
+<message contentType="Text">Procedure: exporting band WATER_VAPOUR, elapsed time[s]: 0.886, total: 0:02:51.187998</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:10.880" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 86.92 : exporting band WATER_VAPOUR, elapsed time[s]: 0.886, total: 0:02:51.187998</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:33.856" level="INFO" process="2508" module="L2A_Process_Landsat" function="postprocess" line="165"/>
+<message contentType="Text">Processing for Landsat completed</message>
+</check>
+</Sen2Cor_Level-2A_Report_File>
+<check>
+<inspection execution="2026-01-29T19:37:33.865" level="INFO" process="2508" module="L2A_SceneClass" function="__del__" line="385"/>
+<message contentType="Text">Module L2A_SceneClass deleted</message>
+</check>
+<check>
+<inspection execution="2026-01-29T19:37:33.899" level=" INFO" process="2508" module="L2A_Logger" function="stream" line="133"/>
+<message contentType="Text">Progress[%]: 100.00 : Application terminated successfully.
+</message>
+</check>
