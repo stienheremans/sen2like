@@ -16,7 +16,7 @@
         <doPackagerL2F>True</doPackagerL2F>
     </Processing>
     <Directories>
-        <archive_dir>E:/2026_Sen2Like/data/HLS_outputs</archive_dir>
+        <archive_dir>C:/Users/stien_heremans/Documents/GitHub/Outputs/HLS_outputs</archive_dir>
         <cams_dir>/data/CAMS/monthly</cams_dir>
         <cams_daily_dir>/data/CAMS/daily</cams_daily_dir>
         <cams_hourly_dir>/data/CAMS/hourly</cams_hourly_dir>
@@ -27,7 +27,7 @@
         <coverage>0.5</coverage>
         <cloud_cover>30</cloud_cover>
         <!-- Local -->
-        <base_url>E:/2026_Sen2Like/data</base_url>
+        <base_url>C:/Users/stien_heremans/Documents/GitHub/Data2</base_url>
         <url_parameters_pattern_Sentinel2>{base_url}/{mission}/{tile}</url_parameters_pattern_Sentinel2>
         <url_parameters_pattern_Landsat8>{base_url}/{mission}/{path}/{row}</url_parameters_pattern_Landsat8>
         <url_parameters_pattern_Landsat9>{base_url}/{mission}/{path}/{row}</url_parameters_pattern_Landsat9>
@@ -75,7 +75,7 @@
     </Geometry>
     <Atmcor>
         <use_sen2cor>True</use_sen2cor>
-        <sen2cor_path>../sen2cor/SEN2COR_3/L2A_Process.py</sen2cor_path>
+        <sen2cor_path>C:/Users/stien_heremans/Documents/GitHub/sen2like/sen2cor3/SEN2COR_3/L2A_Process.py</sen2cor_path>
     </Atmcor>
     <Nbar>
         <nbar_methode>ROY</nbar_methode>
