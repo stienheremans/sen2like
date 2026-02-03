@@ -45,34 +45,42 @@ def retrieve_CAMS_data(date, target_file):
 
 def main():
     """
-    Main function for CAMS ADS API download
+    Main function for CAMS ADS API download - Gecorrigeerde Expert Versie
     """
 
-    dir_ADS_TEST = "/data/CAMS/daily/ADS/"
-    dir_OPER = "/data/CAMS/daily/"
-    
-    #dir_CAMS_daily = dir_ADS_TEST
+    # Gebruik jouw specifieke Windows paden
+    dir_OPER = "E:/2026_Sen2Like/Python/sen2cor3/SEN2COR_3/aux_data/ECMWF/daily/"
     dir_CAMS_daily = dir_OPER    
 
-    current_day_minus_one = time.gmtime(time.time()-86400)
-    startdate = time.strftime("%Y-%m-%d", current_day_minus_one)
+    # --- DATUM AANPASSING ---
+    # Hier vullen we de specifieke Landsat datum in
+    target_date_str = "2023-06-06"
+    # Omzetten naar een structuur die de expert-logica begrijpt
+    target_time_obj = time.strptime(target_date_str, "%Y-%m-%d")
+    
+    # Exacte expert-logica voor variabelen
+    startdate = time.strftime("%Y-%m-%d", target_time_obj)
     enddate = startdate
     date = startdate + "/" + enddate
-    target_dir = dir_CAMS_daily + time.strftime("%Y%m%d", current_day_minus_one) + "/"
+    
+    # Foldernaam: YYYYMMDD (bijv. 20230606)
+    target_dir = dir_CAMS_daily + time.strftime("%Y%m%d", target_time_obj) + "/"
+    
+    # --- DE CORRECTE EXPERT NAAMGEVING ---
+    # Dit is de string waar Sen2Cor specifiek op scant voor Landsat
     target_file = target_dir + "CAMS_archive_aod550_tcwv_msl_gtco3_analysis_0H_6H_12H_18H_{0}.nc".format(startdate)
 
     if not os.path.exists(target_dir):
         os.makedirs(target_dir)
 
-    print(date)
-    print(target_dir)
-    print(target_file)
+    print(f"Requesting date: {date}")
+    print(f"Target directory: {target_dir}")
+    print(f"Target file: {target_file}")
 
-    #let's do it
+    # Start de download met de originele argumenten
     retrieve_CAMS_data(date, target_file)
 
     return
-
 
 if __name__ == "__main__":
     main()
